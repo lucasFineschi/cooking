@@ -1,0 +1,18 @@
+$body-bg:         #1abc9c;
+$navbar-default-bg: #34495e;
+$navbar-default-link-hover-color: black;
+$navbar-default-link-color: white;
+#titulo {
+	text-decoration: underline;
+	color: #1abc9c;
+}
+
+.navbar-brand{
+	text-decoration:cursive;
+}
+
+.jumbotron{
+	text-align: center;
+}
+
+@import 'bootstrap'; 
