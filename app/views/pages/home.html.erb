@@ -2,5 +2,12 @@
 	<h1 id= "titulo">Cooking Misterys</h1>
 	<p><h4>I am going to try and solve cooking puzzles for you to dazzle your family and friends with great dishes.</h4></p>
 	<p>Also, you are going to be able to send me your	 issues and get fast answers to solve your daily questions.</p>
-	<p><br/><br/>Click <%= link_to "Here", "#", class: "btn btn-info btn-lg" %> to register</p>	
+	<% if user_signed_in? %>
+		#Log out
+	<%else%>	
+		<p>
+			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-danger btn-lg" %>	
+			<%= link_to "Sign in", new_user_session_path, class: "btn btn-success btn-lg" %> 
+		</p>
+	<% end %>	
 </div>
