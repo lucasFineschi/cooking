@@ -80,5 +80,7 @@ Rails.application.configure do
   #Required for Herouke
   #Note to set this to you actual host
   config.action_mailer.default_url_options = { host: 'https://roupi-cooking.herokuapp.com/' }
-  
+
+  Paperclip.options[:command_path] = "/opt/ImageMagick/bin/convert"
+    
 end
