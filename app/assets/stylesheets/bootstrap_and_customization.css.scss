@@ -14,5 +14,11 @@ $navbar-default-link-color: white;
 .jumbotron{
 	text-align: center;
 }
+@import "bootstrap-sprockets";
+@import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
-@import 'bootstrap'; 
+
+.center {
+	text-align: center;
+}
